@@ -5,7 +5,7 @@ const without = function(source, itemsToRemove) {
       result.push(source[i]);
     }
   }
-}
+};
 
 const assertArraysEqual = function(source, result) {
   const eqArrays = function(source, result) {
@@ -25,8 +25,7 @@ const assertArraysEqual = function(source, result) {
 
   if (eqArrays(source, result) === true) {
     console.log(`✅✅✅ Arrays Equal Assertion Passed: ${source} === ${result}`);
-  }
-  else {
+  } else {
     console.log(`🛑🛑🛑 Arrays Equal Assertion Failed: ${source} !== ${result}`);
   }
 };
