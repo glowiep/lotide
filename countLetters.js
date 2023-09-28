@@ -1,13 +1,13 @@
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  } else if (actual !== expected) {
+  } else {
     console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
   }
 };
 
 const countLetters = function(word) {
-  word = word.split(" ").join("");
+  word = word.toLowerCase().split(" ").join("");
   let result = {};
   for (const alphabet of word) {
     if (result[alphabet]) {

@@ -24,3 +24,8 @@ const assertArraysEqual = function(arr1, arr2) {
 
 assertArraysEqual([1, 2, 3], [1, 2, 3]);
 
+/* Add in 
+ else if (actual.length === expected.length && actual.length === 0 && Array.isArray(actual) === true && Array.isArray(expected) === true) {
+      perfectMatch = true;
+    }
+*/
