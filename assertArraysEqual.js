@@ -1,3 +1,4 @@
+// Function that prints an appropriate message after comparing the two arrays.
 const eqArrays = require('./eqArrays');
 
 const assertArraysEqual = function(arr1, arr2) {
