@@ -22,8 +22,7 @@ const assertArraysEqual = function(arr1, arr2) {
   }
 };
 
-
-// takeUntil function will return a slice of the array with elements taken from the beginning
+// Function that takes in an array and callback and returns a slice of the array based on the criteria specified in the callback.
 const takeUntil = function(array, callback) {
   let result = [];
   for (let item of array) {
