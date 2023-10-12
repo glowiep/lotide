@@ -1,3 +1,4 @@
+// Function that takes in a string and returns all indices of letter positions in the string.
 const letterPositions = function(sentence) {
   const results = {};
   for (let i = 0; i < sentence.length; i++) {
@@ -12,6 +13,7 @@ const letterPositions = function(sentence) {
   return results;
 };
 
+module.exports = letterPositions;
 // Assert Tests
 // assertArraysEqual
 const assertArraysEqual = function(arr1, arr2) {

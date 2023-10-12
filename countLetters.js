@@ -6,6 +6,7 @@ const assertEqual = function(actual, expected) {
   }
 };
 
+// Function that takes in a sentence and returns a count of each of the letters in the sentence.
 const countLetters = function(word) {
   word = word.toLowerCase().split(" ").join("");
   let result = {};
@@ -18,6 +19,8 @@ const countLetters = function(word) {
   }
   return result;
 };
+
+module.exports = countLetters;
 
 const resultTest = countLetters("lighthouse in the house");
 console.log(resultTest);

@@ -1,4 +1,5 @@
 
+// Function that takes in an array that contains elements including nested array of elements and returns a flattened version of the array.
 const flatten = function(arr) {
   let newArr = [];
   for (let i = 0; i < arr.length; i++) {
@@ -12,6 +13,8 @@ const flatten = function(arr) {
   }
   return newArr;
 };
+
+module.exports = flatten;
 
 // Assert Testing
 const assertArraysEqual = function(flattened, expected) {

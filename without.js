@@ -8,6 +8,8 @@ const without = function(source, itemsToRemove) {
   }
 };
 
+module.exports = without;
+
 const assertArraysEqual = function(source, result) {
   const eqArrays = function(source, result) {
     if (source.length === result.length) {

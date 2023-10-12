@@ -1,3 +1,4 @@
+// Function that takes in an array and returns middle most element of the array.
 const middle = function(arr) {
   let num = arr.length;
   let middle = Math.floor(num / 2);
