@@ -9,8 +9,7 @@ const result1 = findKey({
   "Ora":       { stars: 2 },
   "Akelarre":  { stars: 3 }
 }, x => x.stars === 2); // => "noma"
-                
-console.log(result1);
 
 // Assertion Tests
+console.log("----findKeyTest----");
 assertEqual(result1, "noma"); // true
