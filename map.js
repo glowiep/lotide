@@ -9,13 +9,10 @@ const map = function(array, callback) {
 
 module.exports = map;
 
-/*
-// Test
-const words = ["ground", "control", "to", "major", "tom"];
-// Import assertArraysEqual function 
-const assertArraysEqual = require('./assertArraysEqual')
+//   Test
+// const words = ["ground", "control", "to", "major", "tom"];
 
-const results1 = map(words, word => word[0]);
-
-assertArraysEqual(results1, ['g', 'c', 't', 'm', 't']);
-*/
+//    Import assertArraysEqual function 
+// const assertArraysEqual = require('./assertArraysEqual')
+// const results1 = map(words, word => word[0]);
+// assertArraysEqual(results1, ['g', 'c', 't', 'm', 't']);
