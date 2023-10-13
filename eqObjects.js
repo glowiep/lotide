@@ -21,6 +21,7 @@ const eqArrays = function(arr1, arr2) {
   return true;
 };
 
+// Function that takes in 2 objects and return true if they are equal and false otherwise.
 // Used recursion to allow eqObjects to support nested objects
 const eqObjects = function(object1, object2) {
   const object1Keys = Object.keys(object1);

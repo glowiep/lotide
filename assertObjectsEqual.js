@@ -32,7 +32,7 @@ const eqObjects = function(object1, object2) {
   return false;
 };
 
-// assertObjectsEqual function
+// Takes in 2 objects and asserts whether two arrays are equal.
 const assertObjectsEqual = function(actual, expected) {
   const inspect = require('util').inspect;
   if (eqObjects(actual, expected)) {

@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@glowiep/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "The Lotide project is a modular collection of functions that makes it easier to work with JavaScript arraysm objects and strings (inspired by the Lodash project).",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/glowiep/lotide.git"
   },
-  "author": "",
+  "author": "Gloria Lim <glorialimartt@gmail.com> (https://github.com/glowiep)",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/glowiep/lotide/issues"
