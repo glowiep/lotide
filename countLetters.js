@@ -13,9 +13,3 @@ const countLetters = function(sentence) {
 };
 
 module.exports = countLetters;
-
-// Test
-// const assertEqual = require('./assertEqual');
-// const resultTest = countLetters("lighthouse in the house");
-// console.log(resultTest);
-// assertEqual(resultTest["h"], 4);

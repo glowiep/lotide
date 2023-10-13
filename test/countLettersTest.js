@@ -14,3 +14,10 @@ describe('#countLetters', () => {
     assert.strictEqual(countLetters("lighthouse in the house")["s"], 2);
   });
 });
+
+
+// Test Assertions (old)
+// const assertEqual = require('./assertEqual');
+// const resultTest = countLetters("lighthouse in the house");
+// console.log(resultTest);
+// assertEqual(resultTest["h"], 4);
