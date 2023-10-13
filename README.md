@@ -29,7 +29,7 @@ The following functions are currently implemented:
 * `assertArraysEqual(array1, array2)`: Takes in 2 arrays and asserts whether two arrays are equal.
 * `assertEqual(actual, expected)`: Takes in 2 values and returns true if they are equal and false otherwise.
 * `assertObjectsEqual(actual, expected)`: Takes in 2 objects and asserts whether two arrays are equal.
-* `countLetters(string)`: Takes in a sentence and returns a count of each of the letters in the sentence. 
+* `countLetters(sentence)`: Takes in a sentence (string) and returns a count of each of the letters in the sentence. 
 * `countOnly(allItems, itemsToCount)`: Takes in a collection of items and returns a specific subset of those items.
 * `eqArrays(array1, array2)`: Takes in 2 arrays and returns true if the arrays are equal and false otherwise.
 * `eqObjects(object1, object2)`: Takes in 2 objects and return true if they are equal and false otherwise.
@@ -37,7 +37,7 @@ The following functions are currently implemented:
 * `findKeyByValue`: Takes in an object and a value and returns the first key that corresponds to that value.
 * `flatten(array)`: Takes in an array that contains elements including nested array of elements, and returns a flattened version of the array.
 * `head(array)`: Returns the first element in the array.
-* `letterPositions(string)`: Returns all indices of letter positions in the string.
+* `letterPositions(sentence)`: Returns all indices of letter positions in the sentence (string).
 * `map(array, callback)`: Returns a new array based on the results of the callback on each item in the array.
 * `middle(array)`: Returns middle most element of the array.
 * `tail(array)`: Returns everything except the first element of the array.

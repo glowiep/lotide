@@ -1,36 +1,5 @@
-// eqArrays function
-const eqArrays = function(arr1, arr2) {
-  if (arr1.length === arr2.length) {
-    for (let i = 0; i < arr1.length; i++) {
-      let perfectMatch = false;
-      if (arr1[i] === arr2[i]) {
-        perfectMatch = true;
-      } else {
-        perfectMatch = false;
-        break;
-      }
-      return perfectMatch;
-    }
-  }
-};
-
-// eqObjects function
-const eqObjects = function(object1, object2) {
-  const object1Keys = Object.keys(object1);
-  const object2Keys = Object.keys(object2);
-  if (object1Keys.length === object2Keys.length) {
-    for (let key of object1Keys) {
-      if (Array.isArray(object1[key]) && Array.isArray(object2[key])) {
-        eqArrays(object1Keys, object2Keys);
-      } else if (object1[key] === object2[key]) {
-        return true;
-      } else {
-        return false;
-      }
-    }
-  }
-  return false;
-};
+// Import the eqObjects function
+const eqObjects = require('./eqObjects');
 
 // Takes in 2 objects and asserts whether two arrays are equal.
 const assertObjectsEqual = function(actual, expected) {
@@ -40,8 +9,6 @@ const assertObjectsEqual = function(actual, expected) {
   } else {
     console.log(`🛑🛑🛑 Assert Objects Equal Failed: ${inspect(actual)} !== ${inspect(expected)}`);
   }
-
-  
 };
 
 // Test cases

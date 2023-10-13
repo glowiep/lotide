@@ -1,21 +1,24 @@
-const assertEqual = require('../assertEqual');
+const assert = require('chai').assert;
 const eqArrays = require('../eqArrays');
 
-// Test assertions
-assertEqual(eqArrays([[2, 3], [4]], [[2, 3], [4]]), true); // => true
-assertEqual(eqArrays([[2, 3], [4]], [[2, 3], [4, 5]]), false); // => false
-assertEqual(eqArrays([[2, 3], [4]], [[2, 3], 4]), false); // => false
-console.log("-----------");
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // True
-assertEqual(eqArrays(["1", "a", 3], ["1", "a", 3]), true); // True
-assertEqual(eqArrays([null, [], 0], [null, [], 0]), true); // True
-assertEqual(eqArrays([undefined, false], [undefined, false]), true); // True
+describe('#eqArrays', () => {
+  it("returns TRUE when comparing identical arrays containing number and strings", () => {
+    assert.isTrue(eqArrays(["1", "a", 3], ["1", "a", 3]));
+  });
 
-// Tests after adding recursive case to support checks for nested arrays
-console.log("------Nested Array Checks-----");
-assertEqual(eqArrays([1, [2, [3]]], [1, [2, [3]]]), true); // True
-assertEqual(eqArrays([1, [2, [3]]], [1, [2, 3]]), false); // False
-assertEqual(eqArrays([[], [], [[[3, [4, 5, [6]]]]]], [[], [], [[[3, [4, 5, [6]]]]]]), true); // True
-assertEqual(eqArrays([[], [], [[[3, [4, 5, 6]]]]], [[], [], [[[3, [4, 5, [6]]]]]]), false); // False
-assertEqual(eqArrays([[], [], [[]]], [[], [], [[]]]), true); // True
-assertEqual(eqArrays([[], [], [[]]], [[], [], []]), false); // False
+  it("returns TRUE when comparing identical nested arrays", () => {
+    assert.isTrue(eqArrays([[2, 3], [4]], [[2, 3], [4]]));
+  });
+
+  it("returns TRUE true when comparing identical arrays with null and undefined values", () => {
+    assert.isTrue(eqArrays([null, [], undefined, 0], [null, [], undefined, 0]));
+  });
+
+  it("returns FALSE when comparing similar arrays containing elements with the same values, but different order", () => {
+    assert.isFalse(eqArrays([1, 2, 3], [3, 1, 2]));
+  });
+
+  it("returns FALSE when comparing non-identical nested arrays with the same values", () => {
+    assert.isFalse(eqArrays([1, [2, [3]]], [1, [2, 3]]));
+  });
+});

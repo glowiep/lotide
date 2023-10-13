@@ -1,6 +1,6 @@
 {
   "name": "@glowiep/lotide",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The Lotide project is a modular collection of functions that makes it easier to work with JavaScript arraysm objects and strings (inspired by the Lodash project).",
   "main": "assertArraysEqual.js",
   "directories": {
@@ -18,9 +18,15 @@
   "bugs": {
     "url": "https://github.com/glowiep/lotide/issues"
   },
+  "keywords": [
+    "lotide"
+  ],
   "homepage": "https://github.com/glowiep/lotide#readme",
   "devDependencies": {
     "chai": "^4.3.10",
     "mocha": "^9.2.2"
+  },
+  "dependencies": {
+    "@glowiep/lotide": "^1.0.0"
   }
 }
